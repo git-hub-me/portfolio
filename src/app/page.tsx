@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { caseStudies } from "@/data/case-studies";
+// import { caseStudies } from "@/data/case-studies";
 import { projects } from "@/data/projects";
 import CompanyLogo from "@/components/ui/CompanyLogo";
 
 
-const companyMeta: Record<string, { domain: string; initial: string; color: string }> = {
-    "Mosaic Wellness": { domain: "mosaicwellness.in", initial: "M", color: "#7c3aed" },
-    "Zepto":           { domain: "zeptonow.com",      initial: "Z", color: "#d97706" },
-};
+// const companyMeta: Record<string, { domain: string; initial: string; color: string }> = {
+//     "Mosaic Wellness": { domain: "mosaicwellness.in", initial: "M", color: "#7c3aed" },
+//     "Zepto":           { domain: "zeptonow.com",      initial: "Z", color: "#d97706" },
+// };
 
 const industries = [
     {
@@ -114,62 +114,11 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ── Work / Case Studies ── */}
+            {/* ── Work / Case Studies — TEMPORARILY HIDDEN FOR REVIEW ──
             <section id="work" className="py-24 border-b border-[#1f1f1f]">
-                <div className="max-w-[1080px] mx-auto px-8">
-                    <div className="flex justify-between items-end mb-12 flex-wrap gap-3">
-                        <div>
-                            <p className="text-[10.5px] font-bold text-[#444] tracking-[0.16em] uppercase mb-4">Work</p>
-                            <h2 className="text-[36px] font-extrabold tracking-[-0.03em] text-[#f0f0f0] leading-none">Selected Case Studies</h2>
-                        </div>
-                        <Link href="/work" className="text-[13px] font-medium text-[#7a7a7a] hover:text-[#f0f0f0] transition-colors whitespace-nowrap">
-                            See full breakdowns &rarr;
-                        </Link>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-[#1f1f1f] border border-[#1f1f1f] rounded-xl overflow-hidden">
-                        {caseStudies.map((cs) => {
-                            const meta = companyMeta[cs.company];
-                            return (
-                                <div key={cs.title} className="bg-[#0a0a0a] hover:bg-[#111111] p-8 flex flex-col transition-colors">
-                                    <div className="flex items-center gap-2.5 mb-5">
-                                        {meta && (
-                                            <CompanyLogo
-                                                domain={meta.domain}
-                                                name={cs.company}
-                                                initial={meta.initial}
-                                                color={meta.color}
-                                                size={28}
-                                            />
-                                        )}
-                                        <span className="text-[11.5px] font-semibold text-[#444] tracking-[0.05em] uppercase">
-                                            {cs.company}
-                                        </span>
-                                        {cs.status === "in-progress" && (
-                                            <span className="ml-auto text-[10px] font-semibold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded-full uppercase tracking-wide">
-                                                In Progress
-                                            </span>
-                                        )}
-                                    </div>
-                                    <h3 className="text-[15px] font-bold text-[#f0f0f0] tracking-[-0.015em] leading-snug mb-2.5">
-                                        {cs.title}
-                                    </h3>
-                                    <p className="text-[13px] text-[#7a7a7a] leading-[1.65] flex-1 mb-5">
-                                        {cs.results}
-                                    </p>
-                                    <div className="flex flex-wrap gap-1.5">
-                                        {cs.tools.split(",").map((t) => (
-                                            <span key={t} className="px-2 py-0.5 bg-[#161616] border border-[#2a2a2a] rounded text-[10.5px] font-mono text-[#555] uppercase tracking-wide">
-                                                {t.trim()}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
+                ...
             </section>
+            ── */}
 
             {/* ── AI Projects ── */}
             <section id="ai-projects" className="py-24 border-b border-[#1f1f1f]">
