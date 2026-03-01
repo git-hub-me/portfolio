@@ -40,7 +40,7 @@ export default function Navbar() {
                         </a>
                     ))}
                     <a
-                        href="/BhushanKamble_CV.pdf"
+                        href="/portfolio/BhushanKamble_CV.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-[6px] bg-indigo-600 hover:bg-indigo-700 text-white text-[12.5px] font-semibold rounded-md transition-colors"
@@ -73,7 +73,7 @@ export default function Navbar() {
                         </a>
                     ))}
                     <a
-                        href="/BhushanKamble_CV.pdf"
+                        href="/portfolio/BhushanKamble_CV.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => setIsOpen(false)}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { caseStudies } from "@/data/case-studies";
 import { projects } from "@/data/projects";
 import CompanyLogo from "@/components/ui/CompanyLogo";
@@ -121,9 +122,9 @@ export default function Home() {
                             <p className="text-[10.5px] font-bold text-[#444] tracking-[0.16em] uppercase mb-4">Work</p>
                             <h2 className="text-[36px] font-extrabold tracking-[-0.03em] text-[#f0f0f0] leading-none">Selected Case Studies</h2>
                         </div>
-                        <a href="/work" className="text-[13px] font-medium text-[#7a7a7a] hover:text-[#f0f0f0] transition-colors whitespace-nowrap">
+                        <Link href="/work" className="text-[13px] font-medium text-[#7a7a7a] hover:text-[#f0f0f0] transition-colors whitespace-nowrap">
                             See full breakdowns &rarr;
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-[#1f1f1f] border border-[#1f1f1f] rounded-xl overflow-hidden">
@@ -178,9 +179,9 @@ export default function Home() {
                             <p className="text-[10.5px] font-bold text-[#444] tracking-[0.16em] uppercase mb-4">AI</p>
                             <h2 className="text-[36px] font-extrabold tracking-[-0.03em] text-[#f0f0f0] leading-none">AI Projects</h2>
                         </div>
-                        <a href="/projects" className="text-[13px] font-medium text-[#7a7a7a] hover:text-[#f0f0f0] transition-colors whitespace-nowrap">
+                        <Link href="/projects" className="text-[13px] font-medium text-[#7a7a7a] hover:text-[#f0f0f0] transition-colors whitespace-nowrap">
                             See all projects &rarr;
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-[#1f1f1f] border border-[#1f1f1f] rounded-xl overflow-hidden">
@@ -286,9 +287,9 @@ export default function Home() {
                                 <p className="text-[14px] text-[#7a7a7a] leading-[1.75] mb-4">
                                     Using LLMs to automate revenue analytics — natural language querying on order and customer data, anomaly detection, and AI-generated insight delivery.
                                 </p>
-                                <a href="/work#ai-projects" className="text-[13px] text-[#444] hover:text-[#7a7a7a] transition-colors">
+                                <Link href="/work#ai-projects" className="text-[13px] text-[#444] hover:text-[#7a7a7a] transition-colors">
                                     See AI projects &rarr;
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
