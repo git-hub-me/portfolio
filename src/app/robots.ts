@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://analytics-leader.vercel.app/sitemap.xml',
+        sitemap: 'https://git-hub-me.github.io/portfolio/sitemap.xml',
     }
 }
