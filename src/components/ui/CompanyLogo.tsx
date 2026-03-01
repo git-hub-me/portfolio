@@ -2,11 +2,13 @@
 
 import { useState } from "react";
 
+const BASE_PATH = "/portfolio";
+
 const localLogos: Record<string, string> = {
-    "mosaicwellness.in":   "/logos/mw.png",
-    "zeptonow.com":        "/logos/zp.png",
-    "whitehatjr.com":      "/logos/wh.png",
-    "virtusnutrition.com": "/logos/vn.png",
+    "mosaicwellness.in":   `${BASE_PATH}/logos/mw.png`,
+    "zeptonow.com":        `${BASE_PATH}/logos/zp.png`,
+    "whitehatjr.com":      `${BASE_PATH}/logos/wh.png`,
+    "virtusnutrition.com": `${BASE_PATH}/logos/vn.png`,
 };
 
 interface Props {
