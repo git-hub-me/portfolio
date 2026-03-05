@@ -16,6 +16,26 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        title: "NextMove — AI-Powered Idea & Task Manager (iOS)",
+        description: "Personal iOS app that captures ideas, scores them using AI with RVS methodology, generates actionable tasks, and surfaces stale ideas for weekly review.",
+        problem: "Ideas get lost without a structured system to capture, prioritize, and act on them. Most note apps dump everything into a flat list with no intelligence about what to do next.",
+        whyAI: "Gemini API scores each idea using RVS methodology and generates 3–6 concrete action steps — turning a raw thought into a prioritized, actionable plan without manual effort.",
+        architecture: `Idea captured (collapsible card UI)
+      ↓
+Gemini API (RVS scoring + 3–6 action steps)
+      ↓
+Tasks linked to idea, recurring support
+      ↓
+Review queue surfaces stale/inactive ideas
+      ↓
+Capacitor (local storage, iOS native)`,
+        implementation: "Next.js 14 (App Router, static export) · Tailwind CSS · Zustand (localStorage persistence) · Capacitor 8 (iOS) · Google Gemini API",
+        value: "A personal productivity system that turns captured ideas into scored, actionable tasks — built and shipped as a native iOS app. All data stays local; only idea metadata sent to Gemini.",
+        status: "live",
+        featured: true,
+        githubUrl: "https://github.com/git-hub-me/NextMove",
+    },
+    {
         title: "ExpenseManager — AI-Powered iOS Expense Tracker",
         description: "iOS app that parses natural language expense entries using Google Gemini.",
         problem: "Manual expense logging is tedious — users forget entries or input them inconsistently, making categories unreliable for reporting.",
