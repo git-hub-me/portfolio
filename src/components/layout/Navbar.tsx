@@ -7,7 +7,6 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
     { name: "About",      anchor: "about" },
-    { name: "Work",       anchor: "work" },
     { name: "AI Projects", anchor: "ai-projects" },
     { name: "Industries", anchor: "industries" },
     { name: "Skills",     anchor: "skills" },
@@ -39,14 +38,9 @@ export default function Navbar() {
                             {item.name}
                         </a>
                     ))}
-                    <a
-                        href="/portfolio/BhushanKamble_CV.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-[6px] bg-indigo-600 hover:bg-indigo-700 text-white text-[12.5px] font-semibold rounded-md transition-colors"
-                    >
-                        Download CV
-                    </a>
+                    <span className="px-4 py-[6px] bg-[#1a1a1a] border border-[#2a2a2a] text-[#555] text-[12.5px] font-semibold rounded-md cursor-not-allowed">
+                        CV — Coming Soon
+                    </span>
                 </div>
 
                 {/* Hamburger */}
@@ -72,15 +66,9 @@ export default function Navbar() {
                             {item.name}
                         </a>
                     ))}
-                    <a
-                        href="/portfolio/BhushanKamble_CV.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => setIsOpen(false)}
-                        className="py-3 text-[14px] font-medium text-indigo-400 hover:text-indigo-300 transition-colors"
-                    >
-                        Download CV
-                    </a>
+                    <span className="py-3 text-[14px] font-medium text-[#444] cursor-not-allowed">
+                        CV — Coming Soon
+                    </span>
                 </div>
             </div>
         </nav>

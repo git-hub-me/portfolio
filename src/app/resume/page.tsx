@@ -1,4 +1,4 @@
-import { FileText, Download } from "lucide-react";
+import { FileText } from "lucide-react";
 
 export default function Resume() {
     return (
@@ -7,7 +7,7 @@ export default function Resume() {
             <p className="text-xl text-slate-400 mb-16">Download tailored versions of my resume based on your specific requirements.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="p-8 border border-slate-800 rounded-2xl hover:border-slate-600 transition-all flex flex-col items-start gap-6">
+                <div className="p-8 border border-slate-800 rounded-2xl flex flex-col items-start gap-6 opacity-60">
                     <div className="p-4 bg-slate-800 rounded-lg">
                         <FileText className="text-slate-400" size={32} />
                     </div>
@@ -17,12 +17,12 @@ export default function Resume() {
                             Tailored for traditional leadership roles in Business Intelligence, Data Governance, and Growth Analytics.
                         </p>
                     </div>
-                    <button className="flex items-center gap-2 px-5 py-2.5 bg-white text-slate-900 rounded-md font-medium text-sm hover:bg-slate-200 transition-all">
-                        <Download size={16} /> Download PDF
-                    </button>
+                    <span className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 text-slate-400 rounded-md text-sm font-medium border border-slate-700">
+                        Coming Soon
+                    </span>
                 </div>
 
-                <div className="p-8 border border-slate-800 rounded-2xl hover:border-slate-600 transition-all flex flex-col items-start gap-6">
+                <div className="p-8 border border-slate-800 rounded-2xl flex flex-col items-start gap-6 opacity-60">
                     <div className="p-4 bg-slate-800 rounded-lg">
                         <FileText className="text-slate-400" size={32} />
                     </div>
@@ -32,9 +32,9 @@ export default function Resume() {
                             Tailored for AI-integrated roles, focusing on LLM-agents, autonomous systems, and predictive revenue ops.
                         </p>
                     </div>
-                    <button className="flex items-center gap-2 px-5 py-2.5 bg-white text-slate-900 rounded-md font-medium text-sm hover:bg-slate-200 transition-all">
-                        <Download size={16} /> Download PDF
-                    </button>
+                    <span className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 text-slate-400 rounded-md text-sm font-medium border border-slate-700">
+                        Coming Soon
+                    </span>
                 </div>
             </div>
 

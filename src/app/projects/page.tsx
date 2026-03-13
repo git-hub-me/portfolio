@@ -98,34 +98,6 @@ export default function AIProjects() {
                 ))}
             </div>
 
-            {/* AI Lab Section */}
-            <div className="mt-40 pt-20 border-t border-slate-800">
-                <div className="mb-12">
-                    <h2 className="text-3xl font-bold text-white mb-4">AI Lab</h2>
-                    <p className="text-xl text-slate-400 max-w-2xl">
-                        Short technical notes, experiments, and explorations at the intersection of AI and data systems.
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="p-8 border border-slate-800 rounded-2xl hover:border-slate-600 transition-all">
-                        <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Experiment 01</div>
-                        <h3 className="text-xl font-bold text-white mb-3">SQL Generation with CoT</h3>
-                        <p className="text-slate-400 leading-relaxed text-sm">
-                            Evaluating the efficacy of Chain-of-Thought prompting for generating complex BigQuery SQL with nested UNNESTs.
-                            Findings: CoT reduces syntax errors by 40% on schema-aware tasks.
-                        </p>
-                    </div>
-                    <div className="p-8 border border-slate-800 rounded-2xl hover:border-slate-600 transition-all">
-                        <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Experiment 02</div>
-                        <h3 className="text-xl font-bold text-white mb-3">LLM-Assisted Anomaly Diagnosis</h3>
-                        <p className="text-slate-400 leading-relaxed text-sm">
-                            Feeding Prophet forecast residuals into GPT-4 to generate human-readable explanations.
-                            Successfully identified regional holidays as a cause for sales dips with 90% confidence.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }

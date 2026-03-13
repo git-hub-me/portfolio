@@ -81,7 +81,7 @@ export default function Home() {
                         Analytics lead with 8 years across D2C, quick commerce, and edtech &mdash; now building LLM-powered tools that automate reporting, detect anomalies, and turn natural language into SQL.
                     </p>
                     <div className="flex gap-3 flex-wrap">
-                        <a href="#work" className="inline-flex items-center gap-1.5 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md text-sm font-semibold transition-colors">
+                        <a href="#industries" className="inline-flex items-center gap-1.5 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md text-sm font-semibold transition-colors">
                             View Work &rarr;
                         </a>
                         <a href="#contact" className="inline-flex items-center px-6 py-3 border border-[#2a2a2a] hover:border-[#3a3a3a] text-[#7a7a7a] hover:text-[#f0f0f0] rounded-md text-sm font-medium transition-colors">
@@ -119,49 +119,6 @@ export default function Home() {
                 ...
             </section>
             ── */}
-
-            {/* ── AI Projects ── */}
-            <section id="ai-projects" className="py-24 border-b border-[#1f1f1f]">
-                <div className="max-w-[1080px] mx-auto px-8">
-                    <div className="flex justify-between items-end mb-12 flex-wrap gap-3">
-                        <div>
-                            <p className="text-[10.5px] font-bold text-[#444] tracking-[0.16em] uppercase mb-4">AI</p>
-                            <h2 className="text-[36px] font-extrabold tracking-[-0.03em] text-[#f0f0f0] leading-none">AI Projects</h2>
-                        </div>
-                        <Link href="/projects" className="text-[13px] font-medium text-[#7a7a7a] hover:text-[#f0f0f0] transition-colors whitespace-nowrap">
-                            See all projects &rarr;
-                        </Link>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-[#1f1f1f] border border-[#1f1f1f] rounded-xl overflow-hidden">
-                        {projects.filter((p) => p.featured).map((project) => (
-                            <div key={project.title} className="bg-[#0a0a0a] hover:bg-[#111111] p-8 flex flex-col transition-colors">
-                                <div className="flex items-center gap-2.5 mb-5">
-                                    <span className="text-[11.5px] font-semibold text-indigo-400 tracking-[0.05em] uppercase">
-                                        {project.status === "live" ? "Shipped" : "In Progress"}
-                                    </span>
-                                </div>
-                                <h3 className="text-[15px] font-bold text-[#f0f0f0] tracking-[-0.015em] leading-snug mb-2.5">
-                                    {project.title}
-                                </h3>
-                                <p className="text-[13px] text-[#7a7a7a] leading-[1.65] flex-1 mb-3">
-                                    {project.description}
-                                </p>
-                                <p className="text-[12px] text-[#555] leading-[1.65] mb-5">
-                                    <span className="text-[#7a7a7a] font-medium">Why AI:</span> {project.whyAI}
-                                </p>
-                                <div className="flex flex-wrap gap-1.5">
-                                    {project.implementation.split("·").map((t) => (
-                                        <span key={t} className="px-2 py-0.5 bg-[#161616] border border-[#2a2a2a] rounded text-[10.5px] font-mono text-[#555] uppercase tracking-wide">
-                                            {t.trim()}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* ── Industries ── */}
             <section id="industries" className="py-24 border-b border-[#1f1f1f]">
@@ -236,11 +193,54 @@ export default function Home() {
                                 <p className="text-[14px] text-[#7a7a7a] leading-[1.75] mb-4">
                                     Using LLMs to automate revenue analytics — natural language querying on order and customer data, anomaly detection, and AI-generated insight delivery.
                                 </p>
-                                <Link href="/work#ai-projects" className="text-[13px] text-[#444] hover:text-[#7a7a7a] transition-colors">
+                                <Link href="#ai-projects" className="text-[13px] text-[#444] hover:text-[#7a7a7a] transition-colors">
                                     See AI projects &rarr;
                                 </Link>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── AI Projects ── */}
+            <section id="ai-projects" className="py-24 border-b border-[#1f1f1f]">
+                <div className="max-w-[1080px] mx-auto px-8">
+                    <div className="flex justify-between items-end mb-12 flex-wrap gap-3">
+                        <div>
+                            <p className="text-[10.5px] font-bold text-[#444] tracking-[0.16em] uppercase mb-4">AI</p>
+                            <h2 className="text-[36px] font-extrabold tracking-[-0.03em] text-[#f0f0f0] leading-none">AI Projects</h2>
+                        </div>
+                        <Link href="/projects" className="text-[13px] font-medium text-[#7a7a7a] hover:text-[#f0f0f0] transition-colors whitespace-nowrap">
+                            See all projects &rarr;
+                        </Link>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-[#1f1f1f] border border-[#1f1f1f] rounded-xl overflow-hidden">
+                        {projects.filter((p) => p.featured).map((project) => (
+                            <div key={project.title} className="bg-[#0a0a0a] hover:bg-[#111111] p-8 flex flex-col transition-colors">
+                                <div className="flex items-center gap-2.5 mb-5">
+                                    <span className="text-[11.5px] font-semibold text-indigo-400 tracking-[0.05em] uppercase">
+                                        {project.status === "live" ? "Shipped" : "In Progress"}
+                                    </span>
+                                </div>
+                                <h3 className="text-[15px] font-bold text-[#f0f0f0] tracking-[-0.015em] leading-snug mb-2.5">
+                                    {project.title}
+                                </h3>
+                                <p className="text-[13px] text-[#7a7a7a] leading-[1.65] flex-1 mb-3">
+                                    {project.description}
+                                </p>
+                                <p className="text-[12px] text-[#555] leading-[1.65] mb-5">
+                                    <span className="text-[#7a7a7a] font-medium">Why AI:</span> {project.whyAI}
+                                </p>
+                                <div className="flex flex-wrap gap-1.5">
+                                    {project.implementation.split("·").map((t) => (
+                                        <span key={t} className="px-2 py-0.5 bg-[#161616] border border-[#2a2a2a] rounded text-[10.5px] font-mono text-[#555] uppercase tracking-wide">
+                                            {t.trim()}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
