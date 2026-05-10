@@ -17,11 +17,11 @@ export const experiences: Experience[] = [
         strategicScope: "Own the analytics function across Finance, Product, Logistics, and Growth for a 3-brand D2C wellness company.",
         impact: [
             "Led development of 50+ self-serve revenue and sales trackers across all brands, actively used by 20+ stakeholders for daily planning.",
-            "Cut reconciliation cycle time from 6 months to 3 days by building automation workflows with root-cause diagnostic logic.",
+            "Cut reconciliation cycle time from every 6 months to monthly by building automation workflows with root-cause diagnostic logic.",
             "Saved 500+ man-hours annually by automating reporting and building scalable data systems across product, ops, and marketing.",
             "Designed analytics foundations for doctor-ops and multi-channel SKUs — covering metric definitions, data validation pipelines, and real-time dashboards.",
             "Implemented SKU-level data quality systems (99%+ accuracy), resolved long-standing logic bugs in bundle and discount calculations, and established formal PII governance.",
-            "Mentored two junior analysts from onboarding to full independence — both now own their respective domains end-to-end.",
+            "Mentored 4 analysts from fresher level to full independence — each now owns their respective domain end-to-end.",
             "Documented data models and metric definitions, reducing analyst onboarding time."
         ],
         tools: ["SQL", "Tableau", "Mixpanel", "Python", "Metabase", "Redshift", "n8n"],

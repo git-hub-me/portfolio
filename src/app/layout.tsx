@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Bhushan Kamble — Analytics & AI",
-    description: "Analytics lead with 8 years across D2C, quick commerce, and edtech — building AI systems that make analytics self-serve.",
+    description: "Analytics lead with 8+ years across D2C, quick commerce, and edtech — building AI systems that make analytics self-serve.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

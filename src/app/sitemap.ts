@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://git-hub-me.github.io/portfolio'
+    const baseUrl = 'https://bhushankamble.com'
 
     return [
         {
